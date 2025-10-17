@@ -31,30 +31,6 @@ Testing the keypad first ensures that the input component works correctly before
 | LED        | PC13      | Built-in LED for feedback |
 
 ---
-## Circuit Diagram (Simplified)
-
-        4x4 Keypad Layout
-   -------------------------
-   | 1 | 2 | 3 | A |   <- Columns Y1 Y2 Y3 Y4
-   | 4 | 5 | 6 | B |
-   | 7 | 8 | 9 | C |
-   | * | 0 | # | D |
-   -------------------------
-Rows (Outputs) ----> STM32
-X1 -> PB0
-X2 -> PB1
-X3 -> PB3
-X4 -> PA7
-
-Columns (Inputs, Pull-up) ----> STM32
-Y1 -> PB5
-Y2 -> PB6
-Y3 -> PB7
-Y4 -> PB8
-
-Built-in LED ----> PC13
-
----
 
 ## Software
 
