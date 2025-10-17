@@ -2,7 +2,7 @@
 
 This repository contains example code to test a **4x4 keypad** with an **STM32 Blue Pill (F103C6T6A)** microcontroller using the **built-in LED on PC13** for feedback. The code is uploaded via **ST-Link V2** using **STM32CubeIDE v1.12.1** (the latest version caused code generation issues, so this stable version is used).
 
-Testing the keypad first ensures that the input component works correctly before integrating it with other parts of your project. During testing, some **Blue Pill pins** were faulty or missing (e.g., B2 not available, B4 not working), which required rerouting connections like connecting **keypad R4 to STM32 A7**. Early component checks save you hours of pain—so you don’t end up smashing your STM32 to pieces while tearing your hair out hunting for faults in every tiny component.
+Testing the keypad first ensures that the input component works correctly before integrating it with other parts of your project. During testing, some **Blue Pill pins** were faulty or missing (e.g., B2 not available, B4 not working), which required rerouting connections like connecting **keypad R4 to STM32 A7**. Early component checks save you hours of pain so you don’t end up smashing your STM32 to pieces while tearing your hair out hunting for faults in every tiny component.
 
 ---
 
@@ -31,7 +31,6 @@ Testing the keypad first ensures that the input component works correctly before
 | LED        | PC13      | Built-in LED for feedback |
 
 ---
-## Circuit Diagram (Simplified)
 ## Circuit Diagram (Simplified)
 
         4x4 Keypad Layout
@@ -81,6 +80,6 @@ When testing the keypad, if any row or column does not respond:
 1. Check which pin is not working.  
 2. Try changing the jumper wires to rule out loose connections.  
 3. Connect the wire directly to the STM32 pin to ensure the connection is solid.  
-4. If it still doesn’t work, the pin itself might be faulty—replace or reroute to another available pin as needed.  
+4. If it still doesn’t work, the pin itself might be faulty, replace or reroute to another available pin as needed.  
 
 Following this process helps identify faulty pins early and prevents troubleshooting headaches later.
